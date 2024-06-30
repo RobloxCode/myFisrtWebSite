@@ -1,0 +1,165 @@
+p{
+    font-family: Arial;
+}
+
+body{
+    height: 3000px;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.container_for_search_bar{
+    display: flex;
+    position: fixed;
+    z-index: 100;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 70px;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-bottom-color: rgb(101, 99, 99);
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.text_genre_container{
+    margin-right: 30px;
+}
+
+.text_genre_container:hover{
+    cursor: pointer;
+}
+
+
+.search_bar_container {
+    display: flex;
+}
+
+.search_bar{
+    margin-right: 20px;
+    padding: 10px 10px 10px 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 4px;
+}
+
+.container_for_covers{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 100px;
+}
+
+.container_for_vinyyl_cover,
+.container_for_vinyyl_cover_2{
+    /*we make the position relative, to be able to have a 
+    position absolute inside of this div*/
+    position: relative; 
+    width: 300px;
+    height: 200px;
+    margin-bottom: 200px;
+}
+
+.container_for_vinyyl_cover:hover .container_for_button {
+    opacity: 1;
+    transition: opacity 0.15s;
+}
+
+.container_for_vinyyl_cover_2:hover .container_for_button {
+    opacity: 1;
+    transition: opacity 0.15s;
+}
+
+.container_for_vinyyl_cover_3:hover .container_for_button_white_background{
+    opacity: 1;
+    transition: opacity 0.15s;
+}
+
+.container_for_vinyyl_cover:hover .container_for_button_white_background{
+    opacity: 1;
+    transition: opacity 0.15s;
+}
+
+
+
+.vinyl_cover,
+.vinyl_cover_3{
+    width: 300px;
+    height: 300px;
+}
+
+.vinyl_cover_3 {
+    border-color: rgb(171, 171, 171);
+    border-style: solid;
+    border-width: 2px;
+}
+
+.container_for_text{
+    position: absolute;
+    top: 10px;
+    right:  0px;
+    background-color: black;
+    color: white;
+}
+
+.container_for_text_3 {
+    position: absolute;
+    top: 10px;
+    right:  -3px;
+    background-color: black;
+    color: white;
+}
+
+.container_for_text_4{
+    position: absolute;
+    top: 10px;
+    right:  -3px;
+    background-color: black;
+    color: white;
+}
+
+.text{
+    margin: 10px 10px 10px 10px;
+}
+
+.container_for_button{
+    background: rgba(0,0,0,0.4);
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: -100px;
+    height: 100px;
+    opacity: 0;
+}
+
+.container_for_button_white_background{
+    background: rgba(0,0,0,0.4);
+    position: absolute;
+    left: 0px;
+    right: -3px;
+    bottom: -103px;
+    height: 100px;
+    opacity: 0;    
+}
+
+
+.button {
+    margin-left: 100px;
+    margin-top: 30px;
+    border-color: black;
+    border-style: solid;
+    border-width: 1.5px;
+    padding: 10px 15px 10px 15px;
+}
+
+.button:hover{
+    transition: 0.15s;
+    background-color: rgb(218, 215, 215);
+}
